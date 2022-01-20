@@ -4,7 +4,6 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -16,29 +15,15 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-//plugins {
-//    id 'java'
-//    id 'eclipse'
-//    id 'org.springframework.boot'
-//    id 'io.spring.dependency-management'
-//}
-
 group 'com.freelec.practice'
 version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-//    jcenter()
 }
 
 dependencies {
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
     implementation('org.springframework.boot:spring-boot-starter-web')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
-
-//test {
-//    useJUnitPlatform()
-//}
